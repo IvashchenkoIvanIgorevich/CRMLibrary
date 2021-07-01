@@ -20,9 +20,9 @@ namespace CRMLibrary.UI.Controllers
         public IActionResult Index()
         {
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Book, BookViewModel>());
-            // Настройка AutoMapper
+            
             var mapper = new Mapper(config);
-            // сопоставление
+            
             var books = mapper.Map<List<BookViewModel>>(_service.GetAllBooks());
             return View(books);
         }
