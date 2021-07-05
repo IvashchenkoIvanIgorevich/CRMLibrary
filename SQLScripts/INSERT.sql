@@ -28,14 +28,14 @@ VALUES	(1, 'The Clean Code', '05/04/2011', 'Robert Martin', 500, 'Prentice Hall'
 GO
 
 DELETE FROM [User];
-INSERT INTO [User] ([Id], [Name], [SurName], [INN], [Address], [Birthday], [Phone], [IdDirector], [IdLibrary], [IdUserTypes]) 
-VALUES	(1, 'Ivan', 'Ivashchenko', 324567546, 'Zap highway', '03/05/1994', '+80662345689', NULL, 1, 3),
-		(2, 'Jack', 'Ivanov', 498578604, 'Lenina str', '11/02/2000', '+80449876356', NULL, 1, 3),
-		(3, 'Alex', 'Samoilov', 356787612, 'Kirova str', '01/01/1993', '+80778937643', NULL, 1, 3),
-		(4, 'Leonid', 'Lishrack', 666574568, 'Main highway', '04/11/1998', '+80664563678', NULL, 1, 3),
-		(5, 'Anton', 'Trofimov', 352345645, 'Raduga str', '10/16/1984', '+80445672345', NULL, 1, 4),
-		(6, 'Elena', 'Orhipova', 234123456, 'Lesnaya str', '12/31/1989', '+80567800034', 5, 1, 1),
-		(7, 'Mary', 'Timofeeva', 334564357, 'Luk str', '12/12/1991', '+80334563456', 5, 2, 1)
+INSERT INTO [User] ([Id], [Name], [SurName], [INN], [Address], [Birthday], [Email], [Password], [Phone], [IdDirector], [IdLibrary], [IdUserTypes]) 
+VALUES	(1, 'Ivan', 'Ivashchenko', 324567546, 'Zap highway', '03/05/1994', 'IvanIvashchenko@gmail.com', '80662345689', '+80662345689', NULL, 1, 3),
+		(2, 'Jack', 'Ivanov', 498578604, 'Lenina str', '11/02/2000', 'JackIvanov@gmail.com', '80449876356', '+80449876356', NULL, 1, 3),
+		(3, 'Alex', 'Samoilov', 356787612, 'Kirova str', '01/01/1993', 'AlexSamoilov@gmail.com', '80778937643', '+80778937643', NULL, 1, 3),
+		(4, 'Leonid', 'Lishrack', 666574568, 'Main highway', '04/11/1998', 'LeonidLishrack@gmail.com', '80664563678', '+80664563678', NULL, 1, 3),
+		(5, 'Anton', 'Trofimov', 352345645, 'Raduga str', '10/16/1984', 'AntonTrofimov@gmail.com', '80445672345', '+80445672345', NULL, 1, 4),
+		(6, 'Elena', 'Orhipova', 234123456, 'Lesnaya str', '12/31/1989', 'ElenaOrhipova@gmail.com', '80567800034', '+80567800034', 5, 1, 1),
+		(7, 'Mary', 'Timofeeva', 334564357, 'Luk str', '12/12/1991', 'MaryTimofeeva@gmail.com', '80334563456', '+80334563456', 5, 2, 1)
 GO
 
 DELETE FROM [Order];

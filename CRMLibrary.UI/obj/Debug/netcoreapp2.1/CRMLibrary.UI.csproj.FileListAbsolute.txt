@@ -34,3 +34,5 @@ C:\MyPrograms\PetProjects\CRMLibrary\CRMLibrary.UI\bin\Debug\netcoreapp2.1\CRMLi
 C:\MyPrograms\PetProjects\CRMLibrary\CRMLibrary.UI\bin\Debug\netcoreapp2.1\CRMLibrary.Services.dll
 C:\MyPrograms\PetProjects\CRMLibrary\CRMLibrary.UI\bin\Debug\netcoreapp2.1\CRMLibrary.Services.pdb
 C:\MyPrograms\PetProjects\CRMLibrary\CRMLibrary.UI\bin\Debug\netcoreapp2.1\CRMLibrary.DAL.pdb
+C:\MyPrograms\PetProjects\CRMLibrary\CRMLibrary.UI\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Register.g.cshtml.cs
+C:\MyPrograms\PetProjects\CRMLibrary\CRMLibrary.UI\obj\Debug\netcoreapp2.1\Razor\Views\Home\UserInformation.g.cshtml.cs

@@ -62,6 +62,8 @@ CREATE TABLE [User]
 	[Address]		varchar(100)	NOT NULL,
 	[Phone]			varchar(25)		NOT NULL,
 	[Birthday]		date			NULL,
+	[Email]			varchar(50)		NOT NULL,
+	[Password]		varchar(250)	NOT NULL,
 	[IdUserTypes]	int			FOREIGN KEY REFERENCES [UserTypes]([Id])
 									ON DELETE NO ACTION
 									ON UPDATE CASCADE,

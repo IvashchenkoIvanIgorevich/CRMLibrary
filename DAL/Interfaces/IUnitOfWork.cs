@@ -1,4 +1,5 @@
-﻿using DAL.Interface;
+﻿using CRMLibrary.DAL.Interfaces;
+using DAL.Interface;
 using DAL.Models;
 using System;
 
@@ -6,8 +7,9 @@ namespace DAL.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IGenericRepository<Book> Books { get; }
-        IGenericRepository<Order> Orders { get; }
+        IBookRepository Books { get; }
+        IOrderRepository Orders { get; }
+        IUserRepository Users { get; }
 
         int Complete();
     }

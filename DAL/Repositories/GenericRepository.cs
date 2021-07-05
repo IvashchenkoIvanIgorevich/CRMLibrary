@@ -41,6 +41,11 @@ namespace DAL.Repositories
             return _context.Set<T>().Find(id);
         }
 
+        public bool IsExist(Expression<Func<T, bool>> expression)
+        {
+            return _context.Set<T>().FirstOrDefault(expression) != null;
+        }
+
         public void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace DAL.Interface
 {
@@ -14,5 +13,6 @@ namespace DAL.Interface
         void AddRange(IEnumerable<T> entities);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
+        bool IsExist(Expression<Func<T, bool>> expression);
     }
 }

@@ -19,13 +19,15 @@ namespace DAL.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string SurName { get; set; }
-        public short Inn { get; set; }
+        public int Inn { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
         public DateTime? Birthday { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
         public int? IdUserTypes { get; set; }
         public int? IdLibrary { get; set; }
-        public int IdDirector { get; set; }
+        public int? IdDirector { get; set; }
 
         public virtual User IdDirectorNavigation { get; set; }
         public virtual Library IdLibraryNavigation { get; set; }

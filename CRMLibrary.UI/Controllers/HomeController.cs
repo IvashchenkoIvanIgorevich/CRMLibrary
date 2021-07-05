@@ -2,6 +2,7 @@
 using CRMLibrary.Services.HomeService;
 using CRMLibrary.UI.Models;
 using DAL.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,7 +11,7 @@ namespace CRMLibrary.UI.Controllers
 {
     public class HomeController : Controller
     {
-        private IBookService _service;
+        private readonly IBookService _service;
 
         public HomeController(IBookService service)
         {
@@ -25,6 +26,13 @@ namespace CRMLibrary.UI.Controllers
             
             var books = mapper.Map<List<BookViewModel>>(_service.GetAllBooks());
             return View(books);
+        }
+
+        [Route("userinfo")]
+        [Authorize]
+        public IActionResult UserInformation()
+        {
+            return View();
         }
 
         public IActionResult About()
