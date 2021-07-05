@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,16 @@ namespace CRMLibrary.Services.RegisterService
                 throw new InvalidOperationException("Username already in use");
             }
 
-            User newUser = new User() { Name = name, Email = email, Password = HashString(password) };
+            User newUser = new User()
+            {
+                Id = _unitOfWork.Users.SetId(),
+                Name = name,
+                Email = email,
+                Password = HashString(password)
+            };
 
             _unitOfWork.Users.Add(newUser);
+            _unitOfWork.Complete();
 
             return Task.FromResult(newUser);
         }
@@ -50,6 +58,11 @@ namespace CRMLibrary.Services.RegisterService
 
             var hashValue = hash.ComputeHash(message);
             return Encoding.Unicode.GetString(hashValue);
+        }
+
+        public IEnumerable<User> GetAll()
+        {
+            return _unitOfWork.Users.GetAll();
         }
 
         private readonly IUnitOfWork _unitOfWork;

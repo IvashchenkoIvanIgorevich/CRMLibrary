@@ -12,7 +12,7 @@ namespace CRMLibrary.Services.HomeService
             _repository = unitOfWork;
         }
 
-        public IEnumerable<Book> GetAllBooks()
+        public IEnumerable<Book> GetAll()
         {
             return _repository.Books.GetAll();
         }

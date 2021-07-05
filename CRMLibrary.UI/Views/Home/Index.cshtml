@@ -9,7 +9,7 @@
         <form method="post" asp-controller="Auth" asp-action="LogOut">
             <a href="javascript:document.forms[0].submit()" class="btn btn-lg btn-primary">Log Out</a>
         </form>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+        <div id="tblBook" class="carousel slide" data-ride="carousel" data-interval="6000">
             <table border="1">
                 <br />
                 <tr>
@@ -37,6 +37,41 @@
                 }
             </table>
         </div>
+        <br />
+        @*<div id="tblUser" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <table border="1">
+                <br />
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>SurName</th>
+                    <th>INN</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Birthday</th>
+                    <th>Email</th>
+                    <th>IdUserTypes</th>
+                    <th>IdLibrary</th>
+                    <th>IdDirector</th>
+                </tr>
+                @foreach (UserViewModel user in ViewBag.Users)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.Name</td>
+                        <td>@user.SurName</td>
+                        <td>@user.Inn</td>
+                        <td>@user.Address</td>
+                        <td>@user.Phone</td>
+                        <td>@user.Birthday</td>
+                        <td>@user.Email</td>
+                        <td>@user.IdUserTypes</td>
+                        <td>@user.IdLibrary</td>
+                        <td>@user.IdDirector</td>
+                    </tr>
+                }
+            </table>
+        </div>*@
     }
     else
     {

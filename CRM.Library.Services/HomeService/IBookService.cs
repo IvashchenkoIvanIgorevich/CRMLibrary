@@ -5,6 +5,6 @@ namespace CRMLibrary.Services.HomeService
 {
     public interface IBookService
     {
-        IEnumerable<Book> GetAllBooks();
+        IEnumerable<Book> GetAll();
     }
 }

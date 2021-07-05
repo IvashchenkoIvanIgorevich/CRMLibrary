@@ -19,5 +19,10 @@ namespace CRMLibrary.DAL.Repositories
 
             return _context?.User?.FirstOrDefault(user => user.Email == email);
         }
+
+        public int SetId()
+        {
+            return _context.User.Max(user => user.Id) + 1;
+        }
     }
 }

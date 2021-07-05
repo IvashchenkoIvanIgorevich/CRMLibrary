@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CRMLibrary.Services.HomeService;
+using CRMLibrary.Services.RegisterService;
 using CRMLibrary.UI.Models;
 using DAL.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -11,11 +12,13 @@ namespace CRMLibrary.UI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IBookService _service;
+        private readonly IBookService _serviceBook;
+        private readonly IUserService _serviceUser;
 
-        public HomeController(IBookService service)
+        public HomeController(IBookService serviceBook, IUserService serviceUser)
         {
-            _service = service;
+            _serviceBook = serviceBook;
+            _serviceUser = serviceUser;
         }
 
         public IActionResult Index()
@@ -24,7 +27,7 @@ namespace CRMLibrary.UI.Controllers
             
             var mapper = new Mapper(config);
             
-            var books = mapper.Map<List<BookViewModel>>(_service.GetAllBooks());
+            var books = mapper.Map<List<BookViewModel>>(_serviceBook.GetAll());
             return View(books);
         }
 
@@ -32,6 +35,12 @@ namespace CRMLibrary.UI.Controllers
         [Authorize]
         public IActionResult UserInformation()
         {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<User, UserViewModel>());
+
+            var mapper = new Mapper(config);
+
+            var users = mapper.Map<List<UserViewModel>>(_serviceUser.GetAll());
+            ViewBag.Users = (List<UserViewModel>)users;
             return View();
         }
 

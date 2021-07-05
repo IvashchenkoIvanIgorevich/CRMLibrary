@@ -123,7 +123,7 @@ using CRMLibrary.UI.Models;
             WriteLiteral("        </div>\r\n    </p>\r\n\r\n    ");
             EndContext();
             BeginContext(449, 175, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98238171161a4f48a970c9ec6dac1397", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1d9c93dd3d24807a296f12658ab0a64", async() => {
                 BeginContext(511, 106, true);
                 WriteLiteral("\r\n        <a href=\"javascript:document.forms[0].submit()\" class=\"btn btn-lg btn-primary\">Log Out</a>\r\n    ");
                 EndContext();

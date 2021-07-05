@@ -14,7 +14,7 @@ namespace DAL.Models
             Formular = new HashSet<Formular>();
             InverseIdDirectorNavigation = new HashSet<User>();
             Order = new HashSet<Order>();
-        }
+        }        
 
         public int Id { get; set; }
         public string Name { get; set; }
