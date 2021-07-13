@@ -1,53 +1,56 @@
-﻿using System;
+﻿using CRMLibrary.DAL.Interfaces;
+using DAL.Models;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using DAL.Interface;
-using DAL.Interfaces;
-using DAL.Models;
 
 namespace CRMLibrary.Services.RegisterService
 {
     public class UserService : IUserService
     {
-        public UserService(IUnitOfWork unitOfWork)
+        public UserService(IUserRepository userRepository)
         {
-            _unitOfWork = unitOfWork;
+            _repository = userRepository;
         }
 
         public Task<User> Add(string name, string email, string password)
         {
-            if (_unitOfWork.Users.IsExist(eml => eml.ToString().ToLower() == email.ToLower()))
+            if (_repository.IsExist(eml => eml.Email.ToString().ToLower() == email.ToLower()))
             {
                 throw new InvalidOperationException("Username already in use");
             }
 
             User newUser = new User()
             {
-                Id = _unitOfWork.Users.SetId(),
+                Id = _repository.SetId(),
                 Name = name,
                 Email = email,
                 Password = HashString(password)
             };
 
-            _unitOfWork.Users.Add(newUser);
-            _unitOfWork.Complete();
+            _repository.Add(newUser);
+            _repository.Complete();
 
             return Task.FromResult(newUser);
         }
 
         public Task<User> Authenticate(string email, string password)
         {
-            var foundUser = _unitOfWork.Users.Find(eml => eml.ToString().ToLower() == email.ToLower());
+            var foundUser = _repository
+                .Find(user => user.Email.ToLower() == email.ToLower())
+                .FirstOrDefault();
 
             if (foundUser != null)
             {
-                if (((User)foundUser).Password == HashString(password))
+                if (foundUser.Password == HashString(password))
                 {
-                    return Task.FromResult((User)foundUser);
+                    return Task.FromResult(foundUser);
                 }
             }
+
             return null;
         }
 
@@ -62,9 +65,9 @@ namespace CRMLibrary.Services.RegisterService
 
         public IEnumerable<User> GetAll()
         {
-            return _unitOfWork.Users.GetAll();
+            return _repository.GetAll();
         }
 
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUserRepository _repository;
     }
 }

@@ -6,7 +6,7 @@ namespace DAL.Interface
 {
     public interface IGenericRepository<T> where T : class
     {
-        T GetById(int id);
+        T GetById(int? id);
         IEnumerable<T> GetAll();
         IEnumerable<T> Find(Expression<Func<T, bool>> expression);
         void Add(T entity);
@@ -14,5 +14,8 @@ namespace DAL.Interface
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
         bool IsExist(Expression<Func<T, bool>> expression);
+        void Update(T entity);
+
+        int Complete();
     }
 }

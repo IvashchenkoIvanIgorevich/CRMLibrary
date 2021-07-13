@@ -56,14 +56,14 @@ GO
 CREATE TABLE [User]
 (
 	[Id]			int			PRIMARY KEY NOT NULL,
-	[Name]			varchar(50)		NOT NULL,
-	[SurName]		varchar(50)		NOT NULL,
-	[INN]			int				NOT NULL,
-	[Address]		varchar(100)	NOT NULL,
-	[Phone]			varchar(25)		NOT NULL,
+	[Name]			varchar(50)		NULL,
+	[SurName]		varchar(50)		NULL,
+	[INN]			int				NULL,
+	[Address]		varchar(100)	NULL,
+	[Phone]			varchar(25)		NULL,
 	[Birthday]		date			NULL,
 	[Email]			varchar(50)		NOT NULL,
-	[Password]		varchar(250)	NOT NULL,
+	[Password]		nvarchar(50)		NOT NULL,
 	[IdUserTypes]	int			FOREIGN KEY REFERENCES [UserTypes]([Id])
 									ON DELETE NO ACTION
 									ON UPDATE CASCADE,

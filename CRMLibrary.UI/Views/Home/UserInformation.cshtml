@@ -6,7 +6,7 @@
 <div class="jumbotron">
     <h1>User Information</h1>
     <p>
-        <div>
+        @*<div>
             <label>Username:</label> @User.Identity.Name
         </div>
         <div>
@@ -15,6 +15,40 @@
             {
                 <div>@claim.Issuer | @claim.Type | @claim.Value</div>
             }
+        </div>*@
+        <div id="tblUser" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <table border="1">
+                <br />
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>SurName</th>
+                    <th>INN</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Birthday</th>
+                    <th>Email</th>
+                    <th>IdUserTypes</th>
+                    <th>IdLibrary</th>
+                    <th>IdDirector</th>
+                </tr>
+                @foreach (UserViewModel user in Model)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.Name</td>
+                        <td>@user.SurName</td>
+                        <td>@user.Inn</td>
+                        <td>@user.Address</td>
+                        <td>@user.Phone</td>
+                        <td>@user.Birthday</td>
+                        <td>@user.Email</td>
+                        <td>@user.IdUserTypes</td>
+                        <td>@user.IdLibrary</td>
+                        <td>@user.IdDirector</td>
+                    </tr>
+                }
+            </table>
         </div>
     </p>
 

@@ -24,10 +24,9 @@ namespace CRMLibrary.UI.Controllers
         public IActionResult Index()
         {
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Book, BookViewModel>());
-            
             var mapper = new Mapper(config);
-            
             var books = mapper.Map<List<BookViewModel>>(_serviceBook.GetAll());
+
             return View(books);
         }
 
@@ -36,11 +35,65 @@ namespace CRMLibrary.UI.Controllers
         public IActionResult UserInformation()
         {
             var config = new MapperConfiguration(cfg => cfg.CreateMap<User, UserViewModel>());
-
             var mapper = new Mapper(config);
-
             var users = mapper.Map<List<UserViewModel>>(_serviceUser.GetAll());
+
             ViewBag.Users = (List<UserViewModel>)users;
+
+            return View(users);
+        }
+
+        [Authorize]
+        public IActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Book, BookViewModel>());
+            var mapper = new Mapper(config);
+            var book = mapper.Map<BookViewModel>(_serviceBook.GetById(id));
+
+            return View(book);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult Edit(BookViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<BookViewModel, Book>());
+            var mapper = new Mapper(config);
+            var book = mapper.Map<Book>(model);            
+
+            var editModel = _serviceBook.GetById(model.Id);
+            editModel.Name = model.Name;
+            editModel.Author = model.Author;
+            editModel.IsAvailable = model.IsAvailable;
+            editModel.Location = model.Location;
+            editModel.Pages = model.Pages;
+            editModel.PublishedYear = model.PublishedYear;
+            editModel.Redaction = model.Redaction;
+            editModel.Summary = model.Summary;
+            
+            _serviceBook.Edit(editModel);
+
+            if (model.Id > 0)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
+
+        [Authorize]
+        public IActionResult Look(BookViewModel bookViewModel)
+        {
             return View();
         }
 

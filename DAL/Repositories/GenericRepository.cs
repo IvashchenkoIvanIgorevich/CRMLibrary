@@ -1,5 +1,6 @@
 ﻿using DAL.Interface;
 using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,11 @@ namespace DAL.Repositories
             _context.Set<T>().AddRange(entities);
         }
 
+        public int Complete()
+        {
+            return _context.SaveChanges();
+        }
+
         public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
         {
             return _context.Set<T>().Where(expression);
@@ -36,7 +42,7 @@ namespace DAL.Repositories
             return _context.Set<T>().ToList();
         }
 
-        public T GetById(int id)
+        public T GetById(int? id)
         {
             return _context.Set<T>().Find(id);
         }
@@ -54,6 +60,32 @@ namespace DAL.Repositories
         public void RemoveRange(IEnumerable<T> entities)
         {
             _context.Set<T>().RemoveRange(entities);
+        }
+
+        public void Update(T entity)   //TODO: 
+        {
+            try
+            {
+                if (entity == null)
+                {
+                    throw new ArgumentNullException("entity");
+                }
+                _context.SaveChanges();
+            }
+            catch (DbUpdateException dbEx)
+            {
+                string errorMessage = string.Empty;
+
+                foreach (var validationErrors in dbEx.Entries)
+                {
+                    foreach (var validationError in validationErrors.Collections)
+                    {
+                        errorMessage += Environment.NewLine + string.Format("Query: {0} ", validationError.Query().ToString());
+                    }
+                }
+
+                throw new Exception(errorMessage, dbEx);
+            }
         }
     }
 }
