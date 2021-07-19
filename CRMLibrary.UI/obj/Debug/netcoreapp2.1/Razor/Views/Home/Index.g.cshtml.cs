@@ -93,7 +93,7 @@ using CRMLibrary.UI.Models;
             WriteLiteral("        ");
             EndContext();
             BeginContext(212, 183, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45eb36f9f40b4ca7b5fef86255b5750f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c718211800546978c2469fae9983e64", async() => {
                 BeginContext(274, 114, true);
                 WriteLiteral("\r\n            <a href=\"javascript:document.forms[0].submit()\" class=\"btn btn-lg btn-primary\">Log Out</a>\r\n        ");
                 EndContext();
@@ -225,7 +225,7 @@ using CRMLibrary.UI.Models;
             WriteLiteral("</td>\r\n                        <td align=\"center\">\r\n                            ");
             EndContext();
             BeginContext(1482, 126, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbe068b3c10b4cfd949c94ec2bd24302", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa63579dd5274cf3b9792908ed19741d", async() => {
                 BeginContext(1600, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -264,7 +264,7 @@ using CRMLibrary.UI.Models;
             WriteLiteral("\r\n                            <br />\r\n                            ");
             EndContext();
             BeginContext(1674, 123, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b83461cae1344b09f6b252506cf8a86", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c3bd3a00a4d484296135d5e80c61a6c", async() => {
                 BeginContext(1789, 4, true);
                 WriteLiteral("Look");
                 EndContext();
@@ -321,7 +321,7 @@ using CRMLibrary.UI.Models;
             WriteLiteral("        <p>\r\n            ");
             EndContext();
             BeginContext(1987, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9af610c9bc024ff0bcc8cdb8cb9cc9df", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd56c5893e3a44f3b79df7b1d0e423dc", async() => {
                 BeginContext(2065, 8, true);
                 WriteLiteral("Register");
                 EndContext();
@@ -346,7 +346,7 @@ using CRMLibrary.UI.Models;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(2091, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c38ba90c95c432589bcb5b6301e2e0b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28efd9ca83ad4c9f941c7a368d6093d6", async() => {
                 BeginContext(2166, 6, true);
                 WriteLiteral("Log In");
                 EndContext();

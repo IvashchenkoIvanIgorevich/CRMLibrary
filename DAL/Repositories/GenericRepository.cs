@@ -74,7 +74,7 @@ namespace DAL.Repositories
             }
             catch (DbUpdateException dbEx)
             {
-                string errorMessage = string.Empty;
+                var errorMessage = string.Empty;
 
                 foreach (var validationErrors in dbEx.Entries)
                 {
@@ -85,6 +85,10 @@ namespace DAL.Repositories
                 }
 
                 throw new Exception(errorMessage, dbEx);
+            }
+            catch (Exception ex)
+            {
+
             }
         }
     }

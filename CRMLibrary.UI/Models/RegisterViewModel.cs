@@ -11,8 +11,7 @@ namespace CRMLibrary.UI.Models
         [Required(ErrorMessage = "Have to supply a name")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Have to supply an e-mail address")]
-        [EmailAddress(ErrorMessage = "sdfsdfsdfsdfsdfsdfsdfsdfsdf")]
+        [EmailAddress(ErrorMessage = "Have to supply an e-mail address")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Have to supply a password")]

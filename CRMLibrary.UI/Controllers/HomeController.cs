@@ -5,6 +5,7 @@ using CRMLibrary.UI.Models;
 using DAL.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Diagnostics;
 
@@ -14,11 +15,13 @@ namespace CRMLibrary.UI.Controllers
     {
         private readonly IBookService _serviceBook;
         private readonly IUserService _serviceUser;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(IBookService serviceBook, IUserService serviceUser)
+        public HomeController(IBookService serviceBook, IUserService serviceUser, ILogger<HomeController> logger)
         {
             _serviceBook = serviceBook;
             _serviceUser = serviceUser;
+            _logger = logger;
         }
 
         public IActionResult Index()
@@ -85,6 +88,8 @@ namespace CRMLibrary.UI.Controllers
 
             if (model.Id > 0)
             {
+                _logger.LogInformation("Edited book with id = {0}.", model.Id);
+
                 return RedirectToAction("Index");
             }
 

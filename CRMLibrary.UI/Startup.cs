@@ -3,7 +3,6 @@ using CRMLibrary.DAL.Repositories;
 using CRMLibrary.Services.HomeService;
 using CRMLibrary.Services.RegisterService;
 using DAL;
-using DAL.Interface;
 using DAL.Interfaces;
 using DAL.Models;
 using DAL.Repositories;
@@ -26,12 +25,6 @@ namespace CRMLibrary.UI
 
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.Configure<CookiePolicyOptions>(options =>
-            //{
-            //    options.CheckConsentNeeded = context => true;
-            //    options.MinimumSameSitePolicy = SameSiteMode.None;
-            //});
-
             services.AddMvc();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

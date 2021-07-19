@@ -6,16 +6,6 @@
 <div class="jumbotron">
     <h1>User Information</h1>
     <p>
-        @*<div>
-            <label>Username:</label> @User.Identity.Name
-        </div>
-        <div>
-            <label>Claims</label> <br />
-            @foreach (var claim in User.Claims)
-            {
-                <div>@claim.Issuer | @claim.Type | @claim.Value</div>
-            }
-        </div>*@
         <div id="tblUser" class="carousel slide" data-ride="carousel" data-interval="6000">
             <table border="1">
                 <br />
