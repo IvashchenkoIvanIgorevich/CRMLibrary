@@ -5,3 +5,14 @@
 /.vs/CRMLibrary/v15/Server/sqlite3/storage.ide-shm
 /.vs/CRMLibrary/v15/Server/sqlite3/storage.ide-wal
 /SQL scripts/ef.txt
+
+/.vs/CRMLibrary/DesignTimeBuild/.dtbcache.v2
+/.vs/CRMLibrary/v16/.suo
+/CRM.Library.Services/bin
+/CRM.Library.Services/obj
+/CRMLibrary.RESTAPI/bin
+/CRMLibrary.RESTAPI/obj
+/CRMLibrary.UI/bin
+/CRMLibrary.UI/obj
+/DAL/bin
+/DAL/obj

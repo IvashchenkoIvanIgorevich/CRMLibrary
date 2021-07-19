@@ -1524,6 +1524,7 @@
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -1688,6 +1689,7 @@
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -1703,6 +1705,7 @@
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -1718,6 +1721,7 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -1733,6 +1737,7 @@
       "path": "system.collections/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1986,6 +1991,7 @@
       "path": "system.diagnostics.debug/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2078,6 +2084,7 @@
       "path": "system.globalization/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2164,6 +2171,7 @@
       "path": "system.io/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2244,6 +2252,7 @@
       "path": "system.linq/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2315,6 +2324,7 @@
       "path": "system.linq.expressions/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2398,6 +2408,7 @@
       "path": "system.linq.queryable/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -2481,6 +2492,7 @@
       "path": "system.objectmodel/4.0.12",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2550,6 +2562,7 @@
       "path": "system.reflection/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2630,6 +2643,7 @@
       "path": "system.reflection.emit/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2661,6 +2675,7 @@
       "path": "system.reflection.emit.ilgeneration/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -2693,6 +2708,7 @@
       "path": "system.reflection.emit.lightweight/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -2725,6 +2741,7 @@
       "path": "system.reflection.extensions/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2781,6 +2798,7 @@
       "path": "system.reflection.primitives/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2837,6 +2855,7 @@
       "path": "system.reflection.typeextensions/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2890,6 +2909,7 @@
       "path": "system.resources.resourcemanager/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2946,6 +2966,7 @@
       "path": "system.runtime/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3062,6 +3083,7 @@
       "path": "system.runtime.extensions/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3227,6 +3249,7 @@
       "path": "system.text.encoding/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3342,6 +3365,7 @@
       "path": "system.threading/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3412,6 +3436,7 @@
       "path": "system.threading.tasks/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3486,23 +3511,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\iivasc\\.nuget\\packages\\": {},
+    "C:\\Users\\t_tarass\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyPrograms\\PetProjects\\CRMLibrary\\CRM.Library.Services\\CRMLibrary.Services.csproj",
+      "projectUniqueName": "C:\\mentor\\CRMLibrary\\CRM.Library.Services\\CRMLibrary.Services.csproj",
       "projectName": "CRMLibrary.Services",
-      "projectPath": "C:\\MyPrograms\\PetProjects\\CRMLibrary\\CRM.Library.Services\\CRMLibrary.Services.csproj",
-      "packagesPath": "C:\\Users\\iivasc\\.nuget\\packages\\",
-      "outputPath": "C:\\MyPrograms\\PetProjects\\CRMLibrary\\CRM.Library.Services\\obj\\",
+      "projectPath": "C:\\mentor\\CRMLibrary\\CRM.Library.Services\\CRMLibrary.Services.csproj",
+      "packagesPath": "C:\\Users\\t_tarass\\.nuget\\packages\\",
+      "outputPath": "C:\\mentor\\CRMLibrary\\CRM.Library.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\iivasc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\t_tarass\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3510,13 +3535,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://mia-repo.citrite.net/api/nuget/sf-virtual-nuget": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "C:\\MyPrograms\\PetProjects\\CRMLibrary\\DAL\\CRMLibrary.DAL.csproj": {
-              "projectPath": "C:\\MyPrograms\\PetProjects\\CRMLibrary\\DAL\\CRMLibrary.DAL.csproj"
+            "C:\\mentor\\CRMLibrary\\DAL\\CRMLibrary.DAL.csproj": {
+              "projectPath": "C:\\mentor\\CRMLibrary\\DAL\\CRMLibrary.DAL.csproj"
             }
           }
         }
@@ -3529,6 +3556,7 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
         "dependencies": {
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
@@ -3538,10 +3566,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
