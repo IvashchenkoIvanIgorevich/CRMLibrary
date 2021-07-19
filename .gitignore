@@ -5,3 +5,11 @@
 /.vs/CRMLibrary/v15/Server/sqlite3/storage.ide-shm
 /.vs/CRMLibrary/v15/Server/sqlite3/storage.ide-wal
 /SQL scripts/ef.txt
+/.vs/config
+*.cache
+*.props
+*.targets
+CRMLibrary.RESTAPI/obj/Debug/netcoreapp2.1/
+CRMLibrary.UI/bin/Debug/netcoreapp2.1/
+*.sln
+DAL/obj/Debug/netcoreapp2.1/
