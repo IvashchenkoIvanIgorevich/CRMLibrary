@@ -6,4 +6,4 @@
 /.vs/CRMLibrary/v15/Server/sqlite3/storage.ide-wal
 /SQL scripts/ef.txt
 /.vs/config
-CRM.Library.Services/obj/Debug/netcoreapp2.1/
+/.Services/obj/Debug/netcoreapp2.1/
