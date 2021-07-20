@@ -14,3 +14,4 @@ __pycache__/
 # Coverage
 *.opencover.xml
 src/app/
+*.v2
