@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DAL.Interface;
+using DAL.Models;
+using System;
 
 namespace DAL.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IBookRepository Books { get; }
+        IGenericRepository<Book> Books { get; }
+        IGenericRepository<Order> Orders { get; }
 
         int Complete();
     }

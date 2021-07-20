@@ -1,6 +1,5 @@
 C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\DAL.deps.json
 C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\DAL.dll
-C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\DAL.csprojAssemblyReference.cache
 C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\DAL.csproj.CoreCompileInputs.cache
 C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\DAL.AssemblyInfoInputs.cache
 C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\DAL.AssemblyInfo.cs
@@ -9,3 +8,4 @@ C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\DAL.runtimeconf
 C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\DAL.pdb
 C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\DAL.dll
 C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\DAL.pdb
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\DAL.csprojAssemblyReference.cache

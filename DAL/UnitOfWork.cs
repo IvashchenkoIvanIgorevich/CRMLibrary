@@ -1,4 +1,5 @@
-﻿using DAL.Interfaces;
+﻿using DAL.Interface;
+using DAL.Interfaces;
 using DAL.Models;
 using DAL.Repositories;
 
@@ -6,12 +7,12 @@ namespace DAL
 {
     public class UnitOfWork : IUnitOfWork
     {        
-        public IBookRepository Books { get; private set; }
+        public IGenericRepository<Book> Books { get; }
+        public IGenericRepository<Order> Orders { get; }
 
         public UnitOfWork(LibraryContext context)
         {
             _context = context;
-            Books = new BookRepository(context);
         }
 
         public int Complete()
