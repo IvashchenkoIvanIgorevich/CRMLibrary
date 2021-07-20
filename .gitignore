@@ -8,45 +8,14 @@
 
 /.vs/CRMLibrary/DesignTimeBuild/.dtbcache.v2
 /.vs/CRMLibrary/v16/.suo
-/CRM.Library.Services/bin
-/CRM.Library.Services/obj
-/CRMLibrary.RESTAPI/bin
-/CRMLibrary.RESTAPI/obj
-/CRMLibrary.UI/bin
-/CRMLibrary.UI/obj
-/DAL/bin
-/DAL/obj
+/CRM.Library.Services/bin*/
+/CRM.Library.Services/obj*/
+/CRMLibrary.RESTAPI/bin*/
+/CRMLibrary.RESTAPI/obj*/
+/CRMLibrary.UI/bin*/
+/CRMLibrary.UI/obj*/
+/DAL/bin*/
+/DAL/obj*/
 
-/CRM.Library.Services/obj/CRMLibrary.Services.csproj.nuget.g.props
-/CRM.Library.Services/obj/CRMLibrary.Services.csproj.nuget.g.targets
-/CRM.Library.Services/obj/Debug/netcoreapp2.1/CRMLibrary.Services.assets.cache
-/CRM.Library.Services/obj/project.assets.json
-/CRMLibrary.RESTAPI/CRMLibrary.RESTAPI.csproj
-/CRMLibrary.RESTAPI/obj/CRMLibrary.RESTAPI.csproj.nuget.g.props
-/CRMLibrary.RESTAPI/obj/CRMLibrary.RESTAPI.csproj.nuget.g.targets
-/CRMLibrary.RESTAPI/obj/Debug/netcoreapp2.1/CRMLibrary.RESTAPI.assets.cache
-/CRMLibrary.RESTAPI/obj/project.assets.json
-/CRMLibrary.UI/CRMLibrary.UI.csproj
-/CRMLibrary.UI/obj/CRMLibrary.UI.csproj.nuget.g.props
-/CRMLibrary.UI/obj/CRMLibrary.UI.csproj.nuget.g.targets
-/CRMLibrary.UI/obj/Debug/netcoreapp2.1/CRMLibrary.UI.assets.cache
-/CRMLibrary.UI/obj/project.assets.json
-/DAL/obj/CRMLibrary.DAL.csproj.nuget.g.props
-/DAL/obj/CRMLibrary.DAL.csproj.nuget.g.targets
-/DAL/obj/Debug/netcoreapp2.1/CRMLibrary.DAL.assets.cache
-/DAL/obj/project.assets.json
-/CRM.Library.Services/bin/Debug/netcoreapp2.1/CRM.Library.Services.deps.json
-/CRMLibrary.RESTAPI/Properties/launchSettings.json
-/CRMLibrary.RESTAPI/appsettings.Development.json
-/CRMLibrary.RESTAPI/appsettings.json
-/CRMLibrary.RESTAPI/obj/CRMLibrary.RESTAPI.csproj.nuget.dgspec.json
-/CRMLibrary.RESTAPI/obj/Debug/netcoreapp2.1/CRMLibrary.RESTAPI.AssemblyInfo.cs
-/CRMLibrary.RESTAPI/obj/Debug/netcoreapp2.1/CRMLibrary.RESTAPI.AssemblyInfoInputs.cache
-/CRMLibrary.RESTAPI/obj/Debug/netcoreapp2.1/CRMLibrary.RESTAPI.RazorAssemblyInfo.cache
-/CRMLibrary.RESTAPI/obj/Debug/netcoreapp2.1/CRMLibrary.RESTAPI.RazorAssemblyInfo.cs
-/CRMLibrary.UI/CRMLibrary.UI.csproj.user
-/CRMLibrary.UI/obj/Debug/netcoreapp2.1/.NETCoreApp,Version=v2.1.AssemblyAttributes.cs
-/CRMLibrary.sln
-/
 
 
