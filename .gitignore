@@ -18,6 +18,6 @@
 /DAL/obj*/
 
 /CRM.Library.Services/bin/Debug/netcoreapp2.1/CRM.Library.Services.deps.json
-
+/CRM.Library.Services/obj/project.assets.json
 
 
