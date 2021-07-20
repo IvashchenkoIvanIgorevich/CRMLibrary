@@ -9,19 +9,15 @@
 /.vs/CRMLibrary/DesignTimeBuild/.dtbcache.v2
 /.vs/CRMLibrary/v16/.suo
 /CRM.Library.Services/bin*/
-/CRM.Library.Services/bin*
 /CRM.Library.Services/obj*/
-/CRM.Library.Services/obj*
 /CRMLibrary.RESTAPI/bin*/
-/CRMLibrary.RESTAPI/bin*
 /CRMLibrary.RESTAPI/obj*/
-/CRMLibrary.RESTAPI/obj*
 /CRMLibrary.UI/bin*/
-/CRMLibrary.UI/bin*
 /CRMLibrary.UI/obj*/
-/CRMLibrary.UI/obj*
 /DAL/bin*/
 /DAL/obj*/
+
+/CRM.Library.Services/bin/Debug/netcoreapp2.1/CRM.Library.Services.deps.json
 
 
 
