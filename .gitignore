@@ -1,29 +1,3 @@
-/.vs/CRMLibrary/DesignTimeBuild/.dtbcache
-/.vs/CRMLibrary/v15/.suo
-/.vs/CRMLibrary/v15/Server/sqlite3/db.lock
-/.vs/CRMLibrary/v15/Server/sqlite3/storage.ide
-/.vs/CRMLibrary/v15/Server/sqlite3/storage.ide-shm
-/.vs/CRMLibrary/v15/Server/sqlite3/storage.ide-wal
-/SQL scripts/ef.txt
-
-/.vs/CRMLibrary/DesignTimeBuild/.dtbcache.v2
-/.vs/CRMLibrary/v16/.suo
-/CRM.Library.Services/bin*/
-/CRM.Library.Services/obj*/
-/CRMLibrary.RESTAPI/bin*/
-/CRMLibrary.RESTAPI/obj*/
-/CRMLibrary.UI/bin*/
-/CRMLibrary.UI/obj*/
-/DAL/bin*/
-/DAL/obj*/
-
-/CRM.Library.Services/bin/Debug/netcoreapp2.1/CRM.Library.Services.deps.json
-/CRM.Library.Services/obj/project.assets.json
-
-/CRM.Library.Services/obj/
-
-
-
 #Ignore thumbnails created by Windows
 Thumbs.db
 #Ignore files built by Visual Studio
