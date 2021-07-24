@@ -1,0 +1,10 @@
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\CRMLibrary.DAL.deps.json
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\CRMLibrary.DAL.runtimeconfig.json
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\CRMLibrary.DAL.runtimeconfig.dev.json
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\CRMLibrary.DAL.dll
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\bin\Debug\netcoreapp2.1\CRMLibrary.DAL.pdb
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\CRMLibrary.DAL.csproj.CoreCompileInputs.cache
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\CRMLibrary.DAL.AssemblyInfoInputs.cache
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\CRMLibrary.DAL.AssemblyInfo.cs
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\CRMLibrary.DAL.dll
+C:\MyPrograms\PetProjects\CRMLibrary\DAL\obj\Debug\netcoreapp2.1\CRMLibrary.DAL.pdb
