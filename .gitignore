@@ -15,3 +15,14 @@ __pycache__/
 *.opencover.xml
 src/app/
 *.v2
+/.vs/
+/CRM.Library.Services/bin/
+/CRM.Library.Services/obj/
+/CRMLibrary.UI/bin/
+/CRMLibrary.UI/libman.json
+/CRMLibrary.UI/obj/
+/CRMLibrary.UI/wwwroot/images/
+/CRMLibrary.UI/wwwroot/lib/
+/DAL/bin/
+/DAL/obj/
+/logs/
