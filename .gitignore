@@ -229,5 +229,3 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
-/CRMLibrary.UI/wwwroot/images/
-/CRMLibrary.UI/wwwroot/lib/
