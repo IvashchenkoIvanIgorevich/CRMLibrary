@@ -1,0 +1,10 @@
+dotnet ef dbcontext scaffold "Server=5CD04958PK;Database=Library;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+try{
+foreach($filename in get-childitem -path $cd -filter "*.sql" |sort-object){Invoke-Sqlcmd -ServerInstance $hostname -Database "Library" -InputFile $filename.fullname}
+write-host "Done" -ForegroundColor GREEN
+}
+catch{
+write-host "Error" -ForegroundColor RED
+$PSItem.Exception
+}
