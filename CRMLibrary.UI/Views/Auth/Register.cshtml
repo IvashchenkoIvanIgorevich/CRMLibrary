@@ -10,24 +10,28 @@
     <div asp-validation-summary="All" class="alert alert-danger"></div>
 }
 
-<form class="form" method="post">
-    <h2 class="form-heading">Please register</h2>
-    <label for="inputName" class="sr-only">Name</label>
-    <input type="text" asp-for="Name" id="inputName" class="form-control first" placeholder="Name" required autofocus />
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" asp-for="Email" id="inputEmail" class="form-control" placeholder="Email address" required />
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" asp-for="Password" id="inputPassword" class="form-control" placeholder="Password" required />
-    <label for="inputRepeatPassword" class="sr-only">Repeat Password</label>
-    <input type="password" asp-for="RepeatPassword" id="inputRepeatPassword" class="form-control last" placeholder="Repeat Password" required />
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-</form>
-
-<hr />
-
-<div class="external-providers">
-    @foreach (var scheme in await schemeProvider.GetRequestHandlerSchemesAsync())
-    {
-        <a asp-action="LogInExternal" asp-route-id="@scheme.Name" class="btn btn-lg btn-default">@scheme.DisplayName</a>
-    }
-</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="card custom-card">
+        <div class="card-header bg-primary text-white">
+            <h3>Login Form</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Name)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary rounded-0">Login</button>
+                @Html.ActionLink("New User", "Register")
+            </div>
+        </div>
+    </div>
+}

@@ -6,7 +6,7 @@ namespace CRMLibrary.Services.HomeService
     public interface IBookService
     {
         IEnumerable<Book> GetAll();
-        Book GetById(int? id);
+        Book GetById(int id);
         void Edit(Book editBook);
     }
 }

@@ -16,22 +16,22 @@ namespace CRMLibrary.Services.RegisterService
             _repository = userRepository;
         }
 
-        public Task<User> Add(string name, string email, string password)
+        public Task<User> Add(User newUser)
         {
-            if (_repository.IsExist(eml => eml.Email.ToString().ToLower() == email.ToLower()))
+            if (_repository.IsExist(eml => eml.Email.ToString().ToLower() == newUser.Email.ToLower()))
             {
-                throw new InvalidOperationException("Username already in use");
+                throw new InvalidOperationException($"Email \"{newUser.Email}\" already in use");
             }
 
-            User newUser = new User()
+            User addUser = new User()
             {
                 Id = _repository.SetId(),
-                Name = name,
-                Email = email,
-                Password = HashString(password)
+                Name = newUser.Name,
+                Email = newUser.Email,
+                Password = HashString(newUser.Password)
             };
 
-            _repository.Add(newUser);
+            _repository.Add(addUser);
             _repository.Complete();
 
             return Task.FromResult(newUser);
@@ -40,7 +40,7 @@ namespace CRMLibrary.Services.RegisterService
         public Task<User> Authenticate(string email, string password)
         {
             var foundUser = _repository
-                .Find(user => user.Email.ToLower() == email.ToLower())
+                .Find(user => string.Equals(user.Email, email, StringComparison.OrdinalIgnoreCase))
                 .FirstOrDefault();
 
             if (foundUser != null)
@@ -66,6 +66,11 @@ namespace CRMLibrary.Services.RegisterService
         public IEnumerable<User> GetAll()
         {
             return _repository.GetAll();
+        }
+
+        public User GetById(int id)
+        {
+            return _repository.GetById(id);
         }
 
         private readonly IUserRepository _repository;
