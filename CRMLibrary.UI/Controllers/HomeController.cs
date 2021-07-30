@@ -47,9 +47,9 @@ namespace CRMLibrary.UI.Controllers
         }
 
         [Authorize]
-        public IActionResult Edit(int? id)
+        public IActionResult Edit(int id)
         {
-            if (id == null)
+            if (_serviceBook.GetById(id) == null)
             {
                 return NotFound();
             }

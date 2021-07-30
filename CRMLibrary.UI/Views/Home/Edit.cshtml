@@ -8,27 +8,61 @@
     <div asp-validation-summary="All" class="alert alert-danger"></div>
 }
 
-<form class="form" method="post">
-    <h2 class="form-heading">Edit book</h2>
-    <div class="input-lg">
-        <label for="inputName" class="sr-only">Name</label>
-        <input type="text" asp-for="Name" id="inputName" class="form-control first" placeholder="Name" required autofocus />
-        <label for="inputPY" class="sr-only">Published Year</label>
-        <input type="date" asp-for="PublishedYear" id="inputPY" class="form-control first" placeholder="PublishedYear" required />
-        <label for="inputRedaction" class="sr-only">Redaction</label>
-        <input type="text" asp-for="Redaction" id="inputRedaction" class="form-control first" placeholder="Redaction" required />
-        <label for="inputPages" class="sr-only">Pages</label>
-        <input type="number" asp-for="Pages" id="inputPages" class="form-control first" placeholder="Pages" required />
-        <label for="inputSummary" class="sr-only">Summary</label>
-        <input type="text" asp-for="Summary" id="inputSummary" class="form-control first" placeholder="Summary" required />
-        <label for="inputAuthor" class="sr-only">Author</label>
-        <input type="text" asp-for="Author" id="inputAuthor" class="form-control first" placeholder="Author" required />
-        <label for="inputLocation" class="sr-only">Location</label>
-        <input type="text" asp-for="Location" id="inputLocation" class="form-control first" placeholder="Location" required />
-        <label for="inputIsAvailable" class="form-check-label">IsAvailable</label>
-        <input type="checkbox" asp-for="IsAvailable" id="inputIsAvailable" class="form-check-input" placeholder="IsAvailable" required />
-        <br />
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+<form id="#editBook-form" method="post">
+    <h2 class="form-heading text-center">Edit book - @Model.Name</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div>
+                    <label for="inputName">Name</label>
+                    <input type="text" asp-for="Name" id="inputName" class="form-control" placeholder="Name" required autofocus />
+                    <span asp-validation-for="Name" class="alert-danger"></span>
+                </div>
+                <div>
+                    <label for="inputPY">Published Year</label>
+                    <input type="date" asp-for="PublishedYear" id="inputPY" class="form-control" placeholder="PublishedYear" />
+                    <span asp-validation-for="PublishedYear" class="alert-danger"></span>
+                </div>
+                <div>
+                    <label for="inputRedaction">Redaction</label>
+                    <input type="text" asp-for="Redaction" id="inputRedaction" class="form-control" placeholder="Redaction" />
+                    <span asp-validation-for="Redaction" class="alert-danger"></span>
+                </div>
+                <div>
+                    <label for="inputPages">Pages</label>
+                    <input type="number" asp-for="Pages" id="inputPages" class="form-control" placeholder="Pages" />
+                    <span asp-validation-for="Pages" class="alert-danger"></span>
+                </div>
+                <div>
+                    <label for="inputSummary">Summary</label>
+                    <textarea type="text" asp-for="Summary" id="inputSummary" class="form-control" placeholder="Summary"></textarea>
+                    <span asp-validation-for="Summary" class="alert-danger"></span>
+                </div>
+                <div>
+                    <label for="inputAuthor">Author</label>
+                    <input type="text" asp-for="Author" id="inputAuthor" class="form-control" placeholder="Author" />
+                    <span asp-validation-for="Author" class="alert-danger"></span>
+                </div>
+                <div>
+                    <label for="inputLocation">Location</label>
+                    <input type="text" asp-for="Location" id="inputLocation" class="form-control" placeholder="Location" />
+                    <span asp-validation-for="Location" class="alert-danger"></span>
+                </div>
+                <div>
+                    <label for="inputIsAvailable" class="form-check-label">IsAvailable</label>
+                    <input type="checkbox" asp-for="IsAvailable" id="inputIsAvailable" class="form-check-input" placeholder="IsAvailable" />
+                </div>
+                <br />
+                <button class="btn btn-primary" type="submit">Save</button>
+            </div>
+            <div class="col-sm-4 col-md-offset-2">
+                <img src="~/images/book-pictogram.svg" alt="Book" />
+            </div>
+        </div>
     </div>
 </form>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
 

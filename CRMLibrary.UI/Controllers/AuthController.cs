@@ -1,5 +1,7 @@
-﻿using CRMLibrary.Services.RegisterService;
+﻿using AutoMapper;
+using CRMLibrary.Services.RegisterService;
 using CRMLibrary.UI.Models;
+using DAL.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -73,7 +75,11 @@ namespace CRMLibrary.UI.Controllers
                 return View(model);
             }
 
-            var user = await _userService.Add(model.Name, model.Email, model.Password);
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<RegisterViewModel, User>());
+            var mapper = new Mapper(config);
+            var mappedUser = mapper.Map<User>(model);
+
+            var user = await _userService.Add(mappedUser);
 
             var claims = new List<Claim>
             {
