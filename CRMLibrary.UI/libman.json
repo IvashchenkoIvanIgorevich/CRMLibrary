@@ -17,6 +17,108 @@
     {
       "library": "jquery-validation-unobtrusive@3.2.12",
       "destination": "wwwroot/lib/jquery-validation-unobtrusive"
+    },
+    {
+      "library": "popper.js@2.9.3",
+      "destination": "wwwroot/lib/popper.js/",
+      "files": [
+        "umd/popper.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "vue@3.2.2",
+      "destination": "wwwroot/lib/vue/"
+    },
+    {
+      "library": "vue-resource@1.5.3",
+      "destination": "wwwroot/lib/vue-resource/"
+    },
+    {
+      "library": "animate.css@4.1.1",
+      "destination": "wwwroot/lib/animate.css/"
+    },
+    {
+      "library": "normalize@8.0.1",
+      "destination": "wwwroot/lib/normalize/"
+    },
+    {
+      "library": "font-awesome@5.15.4",
+      "destination": "wwwroot/lib/font-awesome/",
+      "files": [
+        "css/all.css",
+        "css/all.min.css",
+        "css/brands.css",
+        "css/brands.min.css",
+        "css/fontawesome.css",
+        "css/fontawesome.min.css",
+        "css/regular.css",
+        "css/regular.min.css",
+        "css/solid.css",
+        "css/solid.min.css",
+        "css/svg-with-js.css",
+        "css/svg-with-js.min.css",
+        "css/v4-shims.css",
+        "css/v4-shims.min.css",
+        "js/all.js",
+        "js/all.min.js",
+        "js/brands.js",
+        "js/brands.min.js",
+        "js/conflict-detection.js",
+        "js/conflict-detection.min.js",
+        "js/fontawesome.js",
+        "js/fontawesome.min.js",
+        "js/regular.js",
+        "js/regular.min.js",
+        "js/solid.js",
+        "js/solid.min.js",
+        "js/v4-shims.js",
+        "js/v4-shims.min.js",
+        "sprites/brands.svg",
+        "sprites/regular.svg",
+        "sprites/solid.svg",
+        "webfonts/fa-brands-400.eot",
+        "webfonts/fa-brands-400.svg",
+        "webfonts/fa-brands-400.ttf",
+        "webfonts/fa-brands-400.woff",
+        "webfonts/fa-regular-400.eot",
+        "webfonts/fa-regular-400.svg",
+        "webfonts/fa-regular-400.ttf",
+        "webfonts/fa-regular-400.woff",
+        "webfonts/fa-solid-900.eot",
+        "webfonts/fa-solid-900.svg",
+        "webfonts/fa-solid-900.ttf",
+        "webfonts/fa-solid-900.woff"
+      ]
+    },
+    {
+      "library": "owl-carousel@1.3.3",
+      "destination": "wwwroot/lib/owl-carousel/"
+    },
+    {
+      "library": "jquery-nice-select@1.1.0",
+      "destination": "wwwroot/lib/jquery-nice-select/"
+    },
+    {
+      "library": "jquery-ui-bootstrap@0.5pre",
+      "destination": "wwwroot/lib/jquery-ui-bootstrap/",
+      "files": [
+        "assets/css/bootstrap.min.css"
+      ]
+    },
+    {
+      "library": "slick-carousel@1.8.1",
+      "destination": "wwwroot/lib/slick-carousel/"
+    },
+    {
+      "library": "fancybox@3.5.7",
+      "destination": "wwwroot/lib/fancybox/",
+      "files": [
+        "jquery.fancybox.min.js",
+        "jquery.fancybox.css",
+        "jquery.fancybox.js",
+        "jquery.fancybox.min.css"
+      ]
     }
   ]
 }

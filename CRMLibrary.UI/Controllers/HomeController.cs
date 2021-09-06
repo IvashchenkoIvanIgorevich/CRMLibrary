@@ -37,13 +37,13 @@ namespace CRMLibrary.UI.Controllers
         [Authorize]
         public IActionResult UserInformation()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<User, UserViewModel>());
-            var mapper = new Mapper(config);
-            var users = mapper.Map<List<UserViewModel>>(_serviceUser.GetAll());
+            //var config = new MapperConfiguration(cfg => cfg.CreateMap<User, UserViewModel>());
+            //var mapper = new Mapper(config);
+            //var users = mapper.Map<List<UserViewModel>>(_serviceUser.GetAll());
 
-            ViewBag.Users = (List<UserViewModel>)users;
+            //ViewBag.Users = (List<UserViewModel>)users;
 
-            return View(users);
+            return View();
         }
 
         [Authorize]
