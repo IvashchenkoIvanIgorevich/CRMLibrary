@@ -2,7 +2,77 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="jumbotron">
+<section class="slider_section">
+    <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="first-slide" src="~/images/banner.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption relative">
+                        <h1>The Best Libraries That<br> Every Book Lover Must<br> Visit!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="mu-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-about-area">
+
+                    <div class="mu-about-block">
+                        <div class="row">
+
+                            <!-- Start Single Counter -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="mu-single-counter">
+                                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                                    <div class="counter-value" data-count="650">0</div>
+                                    <h5 class="mu-counter-name">Total Pages</h5>
+                                </div>
+                            </div>
+                            <!-- / Single Counter -->
+                            <!-- Start Single Counter -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="mu-single-counter">
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                    <div class="counter-value" data-count="422">0</div>
+                                    <h5 class="mu-counter-name">Chapters</h5>
+                                </div>
+                            </div>
+                            <!-- / Single Counter -->
+                            <!-- Start Single Counter -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="mu-single-counter">
+                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                    <div class="counter-value" data-count="1055">0</div>
+                                    <h5 class="mu-counter-name">Active Readers</h5>
+                                </div>
+                            </div>
+                            <!-- / Single Counter -->
+                            <!-- Start Single Counter -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="mu-single-counter">
+                                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    <div class="counter-value" data-count="03">0</div>
+                                    <h5 class="mu-counter-name">Got Awards</h5>
+                                </div>
+                            </div>
+                            <!-- / Single Counter -->
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<div class="jumbotron">
     <h1>Hello @(User.Identity.IsAuthenticated ? User.Identity.Name : "World")</h1>
     @if (User.Identity.IsAuthenticated)
     {
@@ -52,4 +122,4 @@
             <a asp-controller="Auth" asp-action="LogIn" class="btn btn-lg btn-primary">Log In</a>
         </p>
     }
-</div>
+</div>*@

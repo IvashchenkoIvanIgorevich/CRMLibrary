@@ -2,42 +2,38 @@
 @{
     ViewData["Title"] = "User Information";
 }
-
-<div class="jumbotron">
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="~/lib/vue-resource/vue-resource.js"></script>
+<div class="jumbotron" id="info">
     <h1>User Information</h1>
     <p>
         <div id="tblUser" class="carousel slide" data-ride="carousel" data-interval="6000">
             <table border="1">
                 <br />
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>SurName</th>
-                    <th>INN</th>
-                    <th>Address</th>
-                    <th>Phone</th>
-                    <th>Birthday</th>
-                    <th>Email</th>
-                    <th>IdUserTypes</th>
-                    <th>IdLibrary</th>
-                    <th>IdDirector</th>
-                </tr>
-                @foreach (UserViewModel user in Model)
-                {
+                <thead>
                     <tr>
-                        <td>@user.Id</td>
-                        <td>@user.Name</td>
-                        <td>@user.SurName</td>
-                        <td>@user.Inn</td>
-                        <td>@user.Address</td>
-                        <td>@user.Phone</td>
-                        <td>@user.Birthday</td>
-                        <td>@user.Email</td>
-                        <td>@user.IdUserTypes</td>
-                        <td>@user.IdLibrary</td>
-                        <td>@user.IdDirector</td>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>SurName</th>
+                        <th>INN</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Birthday</th>
+                        <th>Email</th>
                     </tr>
-                }
+                </thead>
+                <tbody>
+                    <tr v-for="(e,index) in users">
+                        <td>{{index+1}}</td>
+                        <td>{{e.name}}</td>
+                        <td>{{e.surName}}</td>
+                        <td>{{e.inn}}</td>
+                        <td>{{e.address}}</td>
+                        <td>{{e.phone}}</td>
+                        <td>{{e.birthday}}</td>
+                        <td>{{e.email}}</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </p>
@@ -46,4 +42,29 @@
         <a href="javascript:document.forms[0].submit()" class="btn btn-lg btn-primary">Log Out</a>
     </form>
 </div>
+<script>
+    var app = new Vue({
+        el: "#info",
+        created: function () {
+            this.init();
+        },
+        data: {
+            users: null
+        },
+        computed: {
+        },
+        methods: {
+            init: function () {
+                this.getUsers();
+            },
+            getUsers: function () {
+                this.$http.get('https://localhost:44330//api/user').then(response => {
+                    this.users = response.data;
+                }, response => {
+                    console.log("Error get all books");
+                });
+            }
+        }
+    });
+</script>
 
